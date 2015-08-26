@@ -39,6 +39,6 @@ prevSeg = saveResult;
 figure;imagesc(fillResult1);
 
 %% Computing Jaccrad Index
-JI11 = calculateJaccardIndex(fillResult1,gtImage)
-   
+accuracy_measures= calculateJaccardIndex(fillResult1,gtImage);
+JI11 = accuracy_measures(8)  
     
